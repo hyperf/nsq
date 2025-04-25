@@ -9,7 +9,6 @@ declare(strict_types=1);
  * @contact  group@hyperf.io
  * @license  https://github.com/hyperf/hyperf/blob/master/LICENSE
  */
-
 namespace Hyperf\Nsq\Annotation;
 
 use Attribute;
@@ -22,7 +21,7 @@ class Consumer extends AbstractAnnotation
         public string $topic = '',
         public string $channel = '',
         public string $name = '',
-        public int $nums = 1,
+        public ?int $nums = null,
         public string $pool = ''
     ) {
     }
